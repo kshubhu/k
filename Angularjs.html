@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular_js</title>
+    <script src="angular.min.js"></script>
+
+  </head>
+  <body>
+    <div ng-app="" style="font-size:25px;">
+      <h2>INPUT DETAILS:</h2>
+      <p>FIRST_NAME:<input type="text" ng-model="firstname" placeholder="Enter Your f_Name"></p>
+      <p>MIDDLE_NAME:<input type="text" ng-model="middlename" placeholder="Enter Your m_Name"></p>
+        <p>LAST_NAME:<input type="text" ng-model="lastname" placeholder="Enter Your l_Name"></p>
+            <h3>YOUR NAME IS :<i style="color:red;"> {{firstname + " " + middlename + " " + lastname}}<i></h3>
+<p>**************************************************</p>
+              <h2>MARKS DETAILS:</h2>
+              <p>MATH:<input type="number" ng-model="math" placeholder="Enter Your marks"></p>
+              <p>ENGLISH:<input type="number" ng-model="english" placeholder="Enter Your marks"></p>
+                <p>HINDI:<input type="number" ng-model="hindi" placeholder="Enter Your marks"></p>
+                <p>SCIENCE:<input type="number" ng-model="science" placeholder="Enter Your marks"></p>
+                <p>COMPUTER:<input type="number" ng-model="computer" placeholder="Enter Your marks"></p>
+
+                  <h3>TOTAL MARKS : {{ math+english+hindi+science+computer}}</h3>
+
+    </div>
+
+  </body>
+</html>
